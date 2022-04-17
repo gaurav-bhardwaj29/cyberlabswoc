@@ -6,7 +6,7 @@ The main objective of the Machine Learning Bootcamp project is to build a robust
 
 ## Authors
 
-- [Gaurav Bhardwaj](https://wwhttps://github.com/gaurav-bhardwaj29)
+- [Gaurav Bhardwaj](https://github.com/gaurav-bhardwaj29)
 
 
 ## Tech Stack

@@ -18,7 +18,7 @@ The main objective of the Machine Learning Bootcamp project is to build a robust
 ## Implementation
 
 #### Linear Regression
-Implementing Linear Regression was straightforward. At first, I made hypothesis and cost function for calculating label and loss at each step respectively, followed by gradient descent. I also triend mini batch gradient descent but it was performing worse than regular gradient descent. Then I standardized the features and finally, calculated RMSE on test set: it turned out to be 74.717, very close to Sklearn's 74.710.
+Implementing Linear Regression was straightforward. At first, I made hypothesis and cost function for calculating label and loss at each step respectively, followed by gradient descent. I also tried mini batch gradient descent but it was performing worse than regular gradient descent. Then I standardized the features and finally, calculated RMSE on test set: it turned out to be 74.717, very close to Sklearn's 74.710.
 ![](Images/download.png)
 #### Polynomial Regression
 The implementation of Polynomial Regression is similar to Linear regression. I created additional feature columns of x^2, y^2, and z^2, but the performance was not upto the mark. Then I was advised by my mentor to add xy, yz and zx columns as well, and it drastically improved the model's performance. At the end, with the help of some feature engineering I was able to get a R2-score of 0.99 and RMSE around 12.
@@ -26,7 +26,7 @@ The implementation of Polynomial Regression is similar to Linear regression. I c
 #### Logistic Regression
 This was by far the most challenging task as it took me about a week to complete the alogorithm. As I was doing ONE vs ALL classification task, I started by creating a binary classifier for each letter in training and testing sample. While calculating cost, I was getting a runtime warning in log, which I managed to eliminate by adding a small constant inside log. At last, I got an average accuracy of 96.35 % on test set.
 #### K-Nearest Neighbours
-The theory behind KNN is simple. First we have to calculate equiledian distance between test instance and training set. Then it sorts k nearest neighbours and votes among them for the most common class label. I first did a Gridsearch using sklearn and found optimum value of K which turned out to be 5. Then I used it for training and got an accuracy of 84.18 % compared to sklearn's accuracy of 84.28 %.
+The theory behind KNN is simple. First we have to calculate equiledian distance between test instance and training set. Then it sorts k nearest neighbours and votes among them for the most common class label. I did a Gridsearch using sklearn to find optimum value of K which turned out to be 5. Then I used it for training and got an accuracy of 84.18 % compared to sklearn's accuracy of 84.28 %.
 #### K-means Clustering
 This was the only unsupervised algorithm so I kept it for the end. At first, I randomly assigned K cluster centroids and then  moved the centroids to the mean positions of their respective clusters. I also utilised elbow method to find optimum K. Finally, the model returned accuracy of 55 %.
 #### Neural Network

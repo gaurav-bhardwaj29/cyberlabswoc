@@ -31,7 +31,7 @@ The theory behind KNN is simple. First we have to calculate equiledian distance 
 ### K-means Clustering
 This was the only unsupervised algorithm so I kept it for the end. At first, I randomly assigned K cluster centroids and then  moved the centroids to the mean positions of their respective clusters. I also utilised elbow method to find optimum K. Finally, the model returned accuracy of 55 %.
 ### Neural Network 🥲
-Theoretically, this alogithm took the most amount of time as I had difficulty in understanding concepts. After clearing my concepts, I was able to construct a neural network with one hidden layer(using `tanh` activation function) and one `softmax` layer. After tweeking the parameters, I found best accuracy with learning rate of 1.0 and number of iterations = 1000. The accuracy turned out to be 73 % on EMNIST test dataset. For regression, I changed the activation function to identity function as others were performing worse. Finally I got RMSE of 12.01 on polynomial dataset and about 71 on linear dataset.
+Theoretically, this alogithm took the most amount of time as I had difficulty in understanding concepts. After clearing my concepts, I was able to construct a neural network with one hidden layer(using `tanh` activation function) and one `softmax` layer. After tweeking the parameters, I found best accuracy with learning rate of 1.0 and number of iterations = 1000. The accuracy turned out to be 73 % on EMNIST test dataset. For regression, I changed the activation function to identity function. Finally I got RMSE of 12.01 on polynomial dataset and about 71 on linear dataset.
 
 ![](Images/__results___3_0.png)
 
